@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Compile') {
             steps {
-                sh 'mvn --version'
+                bat 'mvn --version'
                 sh 'docker version'
                 sh 'mvn clean compile'
             }

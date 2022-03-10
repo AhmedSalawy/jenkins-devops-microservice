@@ -1,6 +1,6 @@
 pipeline {
 	//agent any
-	agent { docker { image 'maven'}}
+	agent { docker { image 'ahmedsalawy/hello-world-python:0.0.1.Release'}}
 	stages {
 		stage('Build') {
 			steps {

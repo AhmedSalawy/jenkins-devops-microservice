@@ -1,10 +1,10 @@
 pipeline {
 	//agent any
-	agent { docker { image maven:eclipse-temurin}}
+	agent { docker { image 'maven'}}
 	stages {
 		stage('Build') {
 			steps {
-				sh 'maven --version'
+				sh 'mvn --version'
 				echo "Build"
 			}
 		}
